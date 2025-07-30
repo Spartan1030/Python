@@ -1,0 +1,24 @@
+# Core data processing
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Database connectivity
+cx-Oracle>=8.0.0
+
+# AWS services
+boto3>=1.20.0
+botocore>=1.23.0
+
+# Web services and SOAP
+zeep>=4.0.0
+requests>=2.25.0
+
+# Type checking and validation
+typing-extensions>=4.0.0
+
+# Optional: For development and testing
+pytest>=6.0.0
+pytest-mock>=3.0.0
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.950

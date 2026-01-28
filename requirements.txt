@@ -1,0 +1,7 @@
+pymongo
+dnspython
+pandas
+boto3
+cx_Oracle
+cffi
+cryptography

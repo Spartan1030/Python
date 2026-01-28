@@ -1,3 +1,7 @@
-cffi==2.0.0
-cryptography==46.0.4
-pymongo==4.16.0
+pymongo
+dnspython
+pandas
+boto3
+cx_Oracle
+cffi
+cryptography

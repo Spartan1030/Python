@@ -1,0 +1,64 @@
+metadata:
+  env: qa
+containers:
+  # Full ECR image URL with the QA tag (adjust tag as needed)
+  image: 651948663039.dkr.ecr.us-east-1.amazonaws.com/fr-cfsov:0.0.16-qa
+  imagePullPolicy: Always
+properties:
+  api-conf: |-
+    spring:
+      profiles:
+        active: qa
+    environment:
+      name: qa
+      services:
+        metadata:
+          # Update this to the correct QA service endpoint if different
+          url: http://service1:8080
+  MONGO_DB_USER: "office_dw_usr"
+  MONGO_DB_HOST: "gen-mgo-que-001.fitchratings.com"
+  MONGO_DB_PORT: "27017"
+  MONGO_DB_SERVICE: "OfficeDW"
+  FROM_EMAIL: "recoverydataetl.qa@fitchratings.com"
+  # TO_EMAIL: "Srikanth.Rukmanagari@fitchratings.com, ian.o'connell@fitchratings.com, leena.mancheril@fitchratings.com, sandip.shrivastava@thefitchgroup.com"
+  TO_EMAIL: "sandip.shrivastava@thefitchgroup.com"
+  SUBJECT: "Recovery Data ETL Report (QA) - Success"
+  SMTP_SERVER: "appmail.fitchratings.com"
+  SMTP_PORT: "25"
+  S3_BUCKET_NAME: "fr-recov-oe-qa"
+  DEPLOYED_ENV: "qa"
+  # Provide the log level expected by the app.
+  APP_LOG_LEVEL: "10"
+  # Keep LOG_LEVEL for compatibility with other consumers.
+  LOG_LEVEL: "10"
+cronjobs:
+  # recovery-data-etl:
+  # Keep the same schedule unless QA requires a different window
+  enabled: true
+  schedule: "0 * * * *"
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        spec:
+          # QA service account (mirrors dev naming convention)
+          serviceAccountName: qa-cfsov-irsa
+          containers:
+            - name: recovery-data-etl
+              # Use the exact same image reference as above to keep it consistent
+              image: "651948663039.dkr.ecr.us-east-1.amazonaws.com/fr-cfsov:0.0.16-qa"
+              resources:
+                limits:
+                  memory: 5096Mi
+                  cpu: 1.5
+                requests:
+                  memory: 3048Mi
+                  cpu: 1
+              envFrom:
+                - configMapRef:
+                    name: recovery-data-etl
+          restartPolicy: Never
+          nodeSelector:
+            beta.kubernetes.io/os: linux
+            kubernetes.io/arch: amd64
+            nodegroup-name: general

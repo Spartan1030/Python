@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wenit Solutions | Strategic Talent Architecture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#515f78",
+                        "on-primary-container": "#74829d",
+                        "tertiary-fixed-dim": "#b6c8e4",
+                        "background": "#041329",
+                        "outline": "#8f9097",
+                        "surface-container-highest": "#27354c",
+                        "surface-container": "#112036",
+                        "secondary-fixed": "#ffdea5",
+                        "on-primary": "#233148",
+                        "surface-bright": "#2c3951",
+                        "inverse-on-surface": "#233148",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "surface-container-low": "#0d1c32",
+                        "on-surface": "#d6e3ff",
+                        "on-tertiary": "#203148",
+                        "tertiary-fixed": "#d3e3ff",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-container-high": "#1c2a41",
+                        "secondary": "#e9c176",
+                        "primary": "#b9c7e4",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#dab36a",
+                        "tertiary-container": "#071a2f",
+                        "on-tertiary-fixed": "#091c32",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#c5c6cd",
+                        "on-tertiary-fixed-variant": "#37485f",
+                        "on-primary-fixed-variant": "#39475f",
+                        "inverse-surface": "#d6e3ff",
+                        "surface-tint": "#b9c7e4",
+                        "surface-container-lowest": "#010e24",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "outline-variant": "#44474d",
+                        "secondary-container": "#604403",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-background": "#d6e3ff",
+                        "surface-variant": "#27354c",
+                        "primary-fixed": "#d6e3ff",
+                        "on-secondary-fixed": "#261900",
+                        "primary-container": "#0a192f",
+                        "surface": "#041329",
+                        "error-container": "#93000a",
+                        "on-secondary": "#412d00",
+                        "tertiary": "#b6c8e4",
+                        "on-tertiary-container": "#72839d",
+                        "surface-dim": "#041329"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .glass-card { background: rgba(39, 53, 76, 0.6); backdrop-filter: blur(24px); }
+        .architect-glow { box-shadow: 0 0 40px rgba(185, 199, 228, 0.05); }
+        .silk-gradient { background: linear-gradient(135deg, #b9c7e4 0%, #0a192f 100%); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .active-nav-border { border-bottom: 2px solid rgba(233, 193, 118, 0.5); }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-2xl shadow-slate-950/40">
+<div class="flex justify-between items-center px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-blue-100 uppercase">
+                Wenit Solutions
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-manrope tracking-tight font-medium text-sm">
+<a class="text-blue-200 border-b-2 border-amber-200/50 pb-1" href="#">Home</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#">About Us</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#">Our Services</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#">Job Openings</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-slate-300 hover:text-white scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md text-sm font-bold uppercase tracking-wider hover:bg-white/5 hover:text-primary transition-all duration-300 ease-out border border-transparent hover:border-primary/20">
+                    Upload Resume
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Cinematic Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden px-12">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="Monochrome architectural shot of a brutalist glass skyscraper reflecting a deep blue twilight sky with sharp geometric angles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQHiSloTDZ0vbpJdlGRNN9TYg-luulETV6l8j8qerdpwG44bMM1oRNLciUCjmBLBl9az1r69ZLHaRK_GcNZlFiTMc0J20BOkXTWQxNkj7gICDQlFBT1H4n6K_aY1O8Kk4TI4JaeCe20DXhDIcJRXFHt98ayKrFkPY5tyrpGzgBTEoCdcLtNUjDRGXnS1q-VyC7u6gRfnGg-m-xmqBbSCdmLSU0xLZJtcDUpGZeDZuwOGJqZ25_O9Om9G0TK1xyWc6v8etf1vRUd4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<div class="inline-flex items-center gap-2 mb-8 px-3 py-1 bg-surface-container-highest/40 backdrop-blur-md rounded-full border border-white/5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-secondary">2025 Readiness Certified</span>
+</div>
+<h1 class="text-7xl md:text-8xl font-extrabold tracking-tighter leading-[0.9] mb-8 text-on-surface">
+                    Architects of <br/>
+<span class="text-primary italic">Human Potential</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl mb-12 font-light leading-relaxed">
+                    Engineering strategic talent ecosystems through precise recruitment, seamless payroll, and future-forward staffing architecture.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-sm tracking-widest uppercase hover:shadow-[0_0_20px_rgba(185,199,228,0.2)] transition-all">
+                        Hire Talent
+                    </button>
+<button class="border border-outline-variant text-on-surface px-8 py-4 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-white/5 transition-all">
+                        Find a Job
+                    </button>
+</div>
+</div>
+<!-- Reputation Feed Micro-Component -->
+<div class="absolute bottom-12 right-12 hidden lg:block">
+<div class="glass-card p-6 rounded-xl border-t border-primary/10 architect-glow max-w-xs">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[10px] font-bold uppercase tracking-widest text-secondary">Live Reputation</span>
+<span class="material-symbols-outlined text-secondary text-sm">verified_user</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">corporate_fare</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface">Global Tech Hub</p>
+<p class="text-[10px] text-on-surface-variant">Permanent Staffing • 2m ago</p>
+</div>
+</div>
+<div class="h-[1px] bg-outline-variant/20"></div>
+<div class="flex items-center gap-4 opacity-50">
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">finance_chip</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface">Fin-Solutions Inc</p>
+<p class="text-[10px] text-on-surface-variant">Contractual • 15m ago</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 'Strategic Blueprint' Bento-Grid Layout -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="text-secondary font-bold tracking-[0.3em] uppercase text-[10px] block mb-4">Service Infrastructure</span>
+<h2 class="text-5xl font-bold tracking-tighter">The Strategic Blueprint</h2>
+</div>
+<p class="text-on-surface-variant max-w-sm text-sm leading-relaxed">
+                    A multi-layered approach to talent acquisition, ensuring structural integrity in your workforce composition.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 grid-rows-2 gap-6 min-h-[700px]">
+<!-- Permanent Recruitment (Large Highlight) -->
+<div class="md:col-span-3 md:row-span-2 glass-card rounded-2xl overflow-hidden group relative border border-white/5">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover opacity-30 transition-transform duration-700 group-hover:scale-110" data-alt="Interior of a modern minimalist office with expansive windows and clean lines, high-end corporate environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbpRKUbhpLpdgwbCBrZaqwGvjRsRA6uLIlCajVy3ITA2tPQvtlR10UTzVobcRYeb6MhcEZCPt9I9H1qzcQYvBuyjKBaHLbha6RzVWZfOoEJoGuuO-U5TSmxpZNsVJYocz8ph6F7tppAA52DlTS-04NpWQMzH3OK5DcBvpuoaGpxjowhYJm7OGzvoIQ3hLspAYBShoc91lI5ad2vWiMUiNP1X3kCGRb7e8wY0mkQy52mGYIivDv67x96Bhd_ggo-Qh1tanXRa2tVIs"/>
+</div>
+<div class="relative h-full flex flex-col justify-end p-10 z-10">
+<div class="w-12 h-1 bg-secondary mb-8 transition-all duration-500 group-hover:w-24"></div>
+<h3 class="text-3xl font-bold mb-4 tracking-tight">Permanent Recruitment</h3>
+<p class="text-on-surface-variant mb-8 max-w-sm">Curating lifelong leadership and specialized expertise to form your company's core foundation.</p>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary group-hover:gap-4 transition-all">
+                            Explore Architecture <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Contractual Staffing -->
+<div class="md:col-span-3 md:row-span-1 bg-surface-container-low rounded-2xl p-10 border border-white/5 flex flex-col justify-between group">
+<div class="flex justify-between items-start">
+<div class="w-14 h-14 rounded-xl bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">precision_manufacturing</span>
+</div>
+<span class="text-xs font-mono text-outline">SRV-02</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-2 tracking-tight">Contractual Staffing</h3>
+<p class="text-on-surface-variant text-sm mb-0 opacity-0 group-hover:opacity-100 transition-opacity">Agile talent deployment for high-impact projects.</p>
+</div>
+</div>
+<!-- Payroll Management -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container rounded-2xl p-10 border border-white/5 flex flex-col justify-between hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl">account_balance_wallet</span>
+</div>
+<h3 class="text-xl font-bold tracking-tight">Seamless Payroll</h3>
+</div>
+<!-- Strategic Advisory -->
+<div class="md:col-span-1 md:row-span-1 silk-gradient rounded-2xl p-8 flex flex-col items-center justify-center text-center group">
+<span class="material-symbols-outlined text-on-primary text-4xl mb-4 group-hover:rotate-45 transition-transform">architecture</span>
+<span class="text-[10px] font-bold text-on-primary uppercase tracking-widest">Advisory</span>
+</div>
+</div>
+</section>
+<!-- 'Wenit Academy' Section -->
+<section class="bg-surface-container-lowest py-32 px-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full" viewbox="0 0 100 100">
+<path class="text-primary" d="M0,100 L100,0 L100,100 Z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2">
+<span class="text-secondary font-bold tracking-[0.3em] uppercase text-[10px] block mb-4">Skill Architecture</span>
+<h2 class="text-6xl font-extrabold tracking-tighter leading-tight mb-8">
+                        Wenit Academy <br/>
+<span class="text-on-surface-variant/40">The Foundry.</span>
+</h2>
+<p class="text-lg text-on-surface-variant font-light mb-12 max-w-lg">
+                        We don't just find talent; we refine it. Our academy bridges the gap between raw potential and industry-ready architectural precision.
+                    </p>
+<div class="space-y-6 mb-12">
+<div class="flex items-center gap-6">
+<span class="text-4xl font-extrabold text-outline-variant/30">01</span>
+<div>
+<h4 class="font-bold">Niche Certification</h4>
+<p class="text-sm text-on-surface-variant">Global standards in ERP and Engineering tools.</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-4xl font-extrabold text-outline-variant/30">02</span>
+<div>
+<h4 class="font-bold">Soft Skill Synthesis</h4>
+<p class="text-sm text-on-surface-variant">Leadership and communication for the modern workplace.</p>
+</div>
+</div>
+</div>
+<button class="flex items-center gap-4 bg-surface-container-highest px-8 py-4 rounded-md border border-white/5 hover:border-secondary/30 transition-all group">
+<span class="font-bold uppercase tracking-widest text-sm">Join the Foundry</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-2 transition-transform">trending_flat</span>
+</button>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="aspect-square w-full glass-card rounded-full p-4 border border-white/5 overflow-hidden architect-glow">
+<img class="w-full h-full object-cover rounded-full mix-blend-overlay opacity-80" data-alt="Young professionals collaborating in a high-tech glass conference room, soft overhead lighting, focused atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg3GMNSOEjGMkyPUvj-qrwuNEpywA6VvUajAyeGm01v21iF27fV9-NiBRXfqKPpXsMAE9e19b2dfwtvOociiqQ2N9BI4EuZSSgy5wS5Bh03RYd-MdRwamqh9eDDfc206xC2aF-E8LXdnP-W0XPTbQIzlDaYvGE2eERTKB7FTefzDhqNS_NgIz-p4OtxDngHHw0GI935_71n9-u_h0QaM5s6lBS6P1qpJu_NLzlfUWfh7FGn9Fe6L03J_-1QL7BBOILWSF4JG6AtbU"/>
+</div>
+<!-- Decorative Floating Element -->
+<div class="absolute -bottom-10 -left-10 glass-card px-8 py-6 rounded-2xl border border-white/10 shadow-2xl">
+<p class="text-5xl font-black text-secondary mb-1">98%</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Placement Rate</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Strategic Partners CTA -->
+<section class="py-32 px-12 text-center max-w-4xl mx-auto">
+<h2 class="text-4xl font-bold tracking-tight mb-8">Ready to evolve your <br/> <span class="italic text-primary">Organizational Blueprint?</span></h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 opacity-30 grayscale contrast-125">
+<div class="flex items-center justify-center p-4">
+<img class="h-8 object-contain" data-alt="Minimalist abstract corporate logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ4MLslvOOKtjVuD4t5GhuRAhhKCg46c8OqD02c_1M5khNPLpi14NbPUCXUW3F5OqVe7WJ3Tf4gDTnL8I2s1XbwufQ_BB8sxGumZUHg69zAfw8xSUqNwIMYamTXCjG1V-yUkrGN3Rlw98oSSLtPzqs9I4DhyDmJph4D5jVvsanWcDcRQhMd76flUae7B_Dh2pVtTzE9v3F-PLVDWcvmK5RhIpUoGmHFlieWISmrIOlA8gWzw-m59RaBaHZP_8QVSsrLo3di7Yjj9I"/>
+</div>
+<div class="flex items-center justify-center p-4">
+<img class="h-8 object-contain" data-alt="Minimalist abstract corporate logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy3MXZkQ0rWyY1WQgiRMqCk1FTw2dvbv9qMN4oCRLzDhQfujcHF91nrpaEnKTnVvvrSIE1dWqi-8sQyIEQWV1dMjTSct6Okny88HPTgAD5kw38apegaOt_sLX4T3zGZpXAQq2xUWkAJLKolnFhy5p3V2t4TTvcfanGymCLMOLkseOgP_T2DFLPJSiaqpLvejxLpFomjTSMbdn7zhFTdPVRB2UvgvHx2i79S2u11_2Ayu8QAnebRMqDD2uB0uTjglMyVGZARNcx_5Q"/>
+</div>
+<div class="flex items-center justify-center p-4">
+<img class="h-8 object-contain" data-alt="Minimalist abstract corporate logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI4WWA2MzSb937WI9ScA4P2lwKtqSeCeL6HrE1JLGxIkxVSqfugvc8jgsmaolwYNbm3EF83XVyciqewXF26WhBpCy6GA8tVIWToXObomQ3YbyX7tmYwF6Af3n_X4APAJjNTCq5NvSKifQild-kBjMM7pvEMzhXuBH8LUkw6zQwoOllUmr5wj27d3zQ0spRqEbulenyXD6IiIA3jYQpNqf8Uw57AFwu9XZ62w2vAphW_aWSKtwSCuW35UUMHs4D-TMokSFMFEstf9w"/>
+</div>
+<div class="flex items-center justify-center p-4">
+<img class="h-8 object-contain" data-alt="Minimalist abstract corporate logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwbznI4wk84WPEnQ7Ni9zRyU4DqtzrFt-Obu_ADg3S8YSCPAHNpmACdxIeWOp24oSngYWcIL5-Zixphz1RWYoNd0LXJISYn9lzY1gCN7uAMLBmMli7TvHHK3ISqFtES8waQAipffnGUd--LIZW7nQ-v_qSNfJjDCluDTn8eDTYE5B3JJI1UboVYsHBn1anMj_UFK5OjQw0tcpJ2AWVcuXsFzJhnA7ozjdiYcDz4ZYuQYFJ4LjAa_TQGJeh7U4uVyAmZjROJWj7QJg"/>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-secondary text-on-secondary px-10 py-5 rounded-md font-bold uppercase tracking-widest hover:shadow-[0_0_30px_rgba(233,193,118,0.2)] transition-all">
+                    Initiate Consultation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full border-t border-white/5 pt-24 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto mb-20">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-semibold text-slate-200 mb-6 uppercase tracking-tighter">Wenit Solutions</div>
+<p class="text-xs text-slate-500 leading-relaxed font-manrope">
+                    Structural engineering for the world's most ambitious human capital projects. Strategic talent architecture across permanent, contract, and payroll domains.
+                </p>
+</div>
+<div>
+<h5 class="font-manrope text-xs tracking-widest uppercase text-slate-400 mb-6 font-bold">Strategy</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Permanent</a></li>
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Contractual</a></li>
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Global Hiring</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-manrope text-xs tracking-widest uppercase text-slate-400 mb-6 font-bold">Ecosystem</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Wenit Academy</a></li>
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Payroll Tech</a></li>
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Compliance</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-manrope text-xs tracking-widest uppercase text-slate-400 mb-6 font-bold">Connect</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Contact Us</a></li>
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-amber-100 transition-colors text-xs uppercase tracking-widest" href="#">Terms</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 border-t border-white/5 pt-12">
+<p class="font-manrope text-xs tracking-widest uppercase text-slate-400 opacity-80">
+                © 2024 Wenit Solutions. GSTIN: 27AAACW1234F1Z5. Strategic Talent Architecture.
+            </p>
+<div class="flex gap-8">
+<a class="text-amber-200 hover:text-amber-100 transition-all" href="#"><span class="material-symbols-outlined text-xl">language</span></a>
+<a class="text-amber-200 hover:text-amber-100 transition-all" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+</div>
+</div>
+</footer>
+</body></html>

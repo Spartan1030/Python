@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Wenit Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#515f78",
+                    "on-primary-container": "#74829d",
+                    "tertiary-fixed-dim": "#b6c8e4",
+                    "background": "#041329",
+                    "outline": "#8f9097",
+                    "surface-container-highest": "#27354c",
+                    "surface-container": "#112036",
+                    "secondary-fixed": "#ffdea5",
+                    "on-primary": "#233148",
+                    "surface-bright": "#2c3951",
+                    "inverse-on-surface": "#233148",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "surface-container-low": "#0d1c32",
+                    "on-surface": "#d6e3ff",
+                    "on-tertiary": "#203148",
+                    "tertiary-fixed": "#d3e3ff",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#e9c176",
+                    "surface-container-high": "#1c2a41",
+                    "secondary": "#e9c176",
+                    "primary": "#b9c7e4",
+                    "error": "#ffb4ab",
+                    "on-secondary-container": "#dab36a",
+                    "tertiary-container": "#071a2f",
+                    "on-tertiary-fixed": "#091c32",
+                    "on-error": "#690005",
+                    "on-surface-variant": "#c5c6cd",
+                    "on-tertiary-fixed-variant": "#37485f",
+                    "on-primary-fixed-variant": "#39475f",
+                    "inverse-surface": "#d6e3ff",
+                    "surface-tint": "#b9c7e4",
+                    "surface-container-lowest": "#010e24",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "outline-variant": "#44474d",
+                    "secondary-container": "#604403",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-background": "#d6e3ff",
+                    "surface-variant": "#27354c",
+                    "primary-fixed": "#d6e3ff",
+                    "on-secondary-fixed": "#261900",
+                    "primary-container": "#0a192f",
+                    "surface": "#041329",
+                    "error-container": "#93000a",
+                    "on-secondary": "#412d00",
+                    "tertiary": "#b6c8e4",
+                    "on-tertiary-container": "#72839d",
+                    "surface-dim": "#041329"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(39, 53, 76, 0.6);
+            backdrop-filter: blur(24px);
+            border-top: 1px solid rgba(185, 199, 228, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #B9C7E4 0%, #74829D 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .architect-accent {
+            width: 30%;
+            height: 2px;
+            background-color: #e9c176;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-2xl shadow-slate-950/40">
+<div class="flex justify-between items-center px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-blue-100 uppercase">Wenit Solutions</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-manrope tracking-tight font-medium text-sm text-slate-300 hover:text-white transition-colors" href="#">Home</a>
+<a class="font-manrope tracking-tight font-medium text-sm text-blue-200 border-b-2 border-amber-200/50 pb-1" href="#">About Us</a>
+<a class="font-manrope tracking-tight font-medium text-sm text-slate-300 hover:text-white transition-colors" href="#">Our Services</a>
+<a class="font-manrope tracking-tight font-medium text-sm text-slate-300 hover:text-white transition-colors" href="#">Job Openings</a>
+<a class="font-manrope tracking-tight font-medium text-sm text-slate-300 hover:text-white transition-colors" href="#">Contact Us</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium text-sm scale-95 transition-transform duration-200 hover:bg-primary/90">Upload Resume</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero: The Digital Consigliere -->
+<section class="relative min-h-[819px] flex items-center px-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale opacity-40" data-alt="Monochrome architectural shot of a modern glass skyscraper reflecting a dark dramatic sky with sharp angles and high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA7x8u9r2HD4Xt8xqfS_XkdaWNbf8eP1JE0ksVQuBnVzWQKpkbw3a5pZm2l2lhOvb-h0mnvdT3rFOWOnsKz2moBmtssr8HWGOUHAYYR7x2lixE-Yk8dep2HKWiTz8YGra4yrUR6g07nyuF_36AgNGv96wS1cKintJDEu0mGrmQzag-4TRRC30w3FDmKGOsuZCrQkoUlg0jGUG0AeY_g8YDwWPIDF-wb73BbN8qHh8dwqiAw84cuJ5nhJANTpUBdCquRfNIBDih07Y"/>
+</div>
+<div class="relative z-20 max-w-4xl">
+<span class="text-secondary tracking-[0.3em] uppercase text-xs font-bold mb-6 block">The Digital Consigliere</span>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-8 text-gradient">
+                    ARCHITECTS OF <br/> HUMAN CAPITAL
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl font-light leading-relaxed">
+                    We don't just fill seats. We engineer growth through a clandestine network of strategic talent, acting as the silent advisor to the world's most ambitious enterprises.
+                </p>
+</div>
+</section>
+<!-- Our Legacy Section (Asymmetric Layout) -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative">
+<div class="absolute -top-12 -left-12 text-[12rem] font-extrabold text-white/5 select-none leading-none">01</div>
+<h2 class="text-4xl font-bold tracking-tight mb-8">OUR LEGACY</h2>
+<div class="architect-accent mb-6"></div>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-6">
+                        Founded on the principles of structural integrity and absolute discretion, Wenit Solutions emerged from the need for a more sophisticated approach to global staffing. 
+                    </p>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        What began as a boutique advisory has evolved into a global engine of talent architecture, bridging the gap between vision and execution.
+                    </p>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 gap-4">
+<div class="pt-12">
+<img class="rounded-xl grayscale hover:grayscale-0 transition-all duration-700 h-[400px] object-cover" data-alt="Close up of a professional in a sharp dark suit adjusting a cufflink, black and white editorial style, dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH1rCiYpfxUsHPYwJuwSks9puOG9OZW-29gzlx7nMsFpYMueLG5AccsHpmwslfvbFlklozo7PkAG6AGmP2eJvlUnB-_XAs16zppE875jnZFT588snYlwoIu1FAn04lAeaJUxspINGpXZO9Hord7r24vCWX2ns_MprF1g69E0RDu3Cg6DV6JRDKmNivlC3mZdf53X80_8M8CZgz5hTlMyYGpH4dnPeuNlrHIGoJO2v0FYxPpiux2_isqLwFjzQXl1m23Dikhg9t5dE"/>
+</div>
+<div>
+<img class="rounded-xl h-[400px] object-cover grayscale brightness-50" data-alt="Minimalist modern office interior with glass walls and dark furniture, low angle shot, sophisticated mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQlmLyviBU8wtCbL0r0a-YrgA8aMyP70pVhsmFgz8ZLoGgoClufJKy1ryqe-Bnuixq846-marKm0uSfi0oFvOcB3vkSd_wnmiHG_L06i7mBPvB4wWvTGbGwNKFPxE5_FKGYSggz2YECHEgqEQqoszdTUlCdh3OmaLlOybMhzBQrGmU9pXDsuO-WuXyYEHW8l5NUHRwckJSZ7b625FTy1ko0mXJtUp7GgyO_0-4ywplo8AhWfQbfcTIliMOD4cHQmMcdu_bCVLZ2CQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision: Glassmorphism Bento -->
+<section class="py-32 px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Mission Card -->
+<div class="glass-card p-12 rounded-xl group hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-8">architecture</span>
+<h3 class="text-3xl font-bold mb-6 tracking-tight">The Mission</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        To curate and deploy the world's most elite technical and creative minds into environments where they don't just function—they thrive. We build the scaffolding for corporate evolution.
+                    </p>
+</div>
+<!-- Vision Card -->
+<div class="glass-card p-12 rounded-xl group hover:shadow-2xl hover:shadow-primary/5 transition-all md:mt-16">
+<span class="material-symbols-outlined text-secondary text-4xl mb-8">visibility</span>
+<h3 class="text-3xl font-bold mb-6 tracking-tight">The Vision</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        A future where the friction of recruitment is replaced by the precision of architecture. We aim to be the global standard for high-stakes talent placement and strategic consulting.
+                    </p>
+</div>
+</div>
+</section>
+<!-- The Strategists (Team Section) -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<span class="text-secondary tracking-widest uppercase text-xs font-bold mb-4 block">Human Intelligence</span>
+<h2 class="text-5xl font-bold tracking-tighter">THE STRATEGISTS</h2>
+</div>
+<p class="max-w-md text-on-surface-variant text-right italic font-light">
+                        "The strength of the team is each individual member. The strength of each member is the team."
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Strategist 1 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-lg mb-6 bg-surface-container-highest">
+<img class="w-full aspect-[3/4] object-cover grayscale transition-transform duration-700 group-hover:scale-110" data-alt="Black and white portrait of a confident male executive in a suit, looking directly at camera, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2td13nuMHIqrN9T9cmrRSz18nTX3QMZpHUt4vnjMvXTmtr-62PedNNya-AhXvNhIXu3sK8B7TyA3nwzmrrI0Ogn8mn74X2d2yuYMznfsf5JGEZbSg1pzLQbe2XSdhz_FXkb3vPzk62CDm70tY5ltlN4jw8YOg9G0JHNU_OIO_CXIM7ZJR1Kx4Qf1ZQb36ykl76Cbcmlifyzw-sq-KRrgvYVkvZGS88al6jMo0I4ZBMdLErZ3BqUSOcZrDxNNs1ETCf8HmqyI6pbM"/>
+</div>
+<h4 class="text-xl font-bold tracking-tight">Alexander Wenit</h4>
+<p class="text-secondary text-xs uppercase tracking-widest font-bold">Chief Architect</p>
+</div>
+<!-- Strategist 2 -->
+<div class="group cursor-pointer md:mt-12">
+<div class="overflow-hidden rounded-lg mb-6 bg-surface-container-highest">
+<img class="w-full aspect-[3/4] object-cover grayscale transition-transform duration-700 group-hover:scale-110" data-alt="Black and white professional portrait of a woman in business attire, modern editorial style, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKQonn5gKYmcrjWIaX9sqrZo9SMvWwwDZTa88ssMJRLIdycpUmgFx7hzIsPUkqnKLL_zQEs1yeHKr16dIoevi-gufiDn18IkTD9YQKr1RHAGoPwg01NsnhlxzFD_7liP0_rqVo8P7NHlNs-Ep6tWdnzIGrU9j5AlV-xpG39sgdW-05peSAvSBbA1MzOJNoi3tmsn1EiU6cNLmj_ev-M1TskndAyUxym4oe_V8ga2htqA1bMpROErKg3LLq-x481ThmvEF9FvfLOng"/>
+</div>
+<h4 class="text-xl font-bold tracking-tight">Elena Moretti</h4>
+<p class="text-secondary text-xs uppercase tracking-widest font-bold">Global Operations</p>
+</div>
+<!-- Strategist 3 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-lg mb-6 bg-surface-container-highest">
+<img class="w-full aspect-[3/4] object-cover grayscale transition-transform duration-700 group-hover:scale-110" data-alt="Black and white portrait of a thoughtful man in a turtleneck, corporate creative style, soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS3njHbn5YV7uVGTOXo5RFtXkJVNydqyhDrw9wUhtfySaoQ91C7L3XCsUVGEvRW_JtanW9s9JDUI1fm6puvzbloXsRG5Fd4ZoqYXYAwNND-wFKGZnjB9mMUc8xRh7Y8_fjJ8GWQPbvG9JXElh212Faocq5jvddnzBgwcP6gzaWo3DLYVsUcj1RwqdWvoGJjkZ0kjGQ4IqRKMNoc7PhnQZRwKRKaQK0E8oeEwo2HGFqQ3FCUTjVVbH-O8OEImcOEa9ddqiqrCd3mws"/>
+</div>
+<h4 class="text-xl font-bold tracking-tight">Marcus Thorne</h4>
+<p class="text-secondary text-xs uppercase tracking-widest font-bold">Talent Scoping</p>
+</div>
+<!-- Strategist 4 -->
+<div class="group cursor-pointer md:mt-12">
+<div class="overflow-hidden rounded-lg mb-6 bg-surface-container-highest">
+<img class="w-full aspect-[3/4] object-cover grayscale transition-transform duration-700 group-hover:scale-110" data-alt="Black and white studio portrait of a female professional with glasses, intelligent and sharp look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9CSplcd8XchJmrx7cmWDTO5bPZGKLS14BMnQjzSlti0y8iH04u9P5tzy75ggp0Ie69i6P5kyl-q4z3eZW_UAKNJAyWT8e9ZTiJZPj8U_ZWqvJBfIiaCGLIuhDc_vc-sTbkeb_-BP3jiJOv7wsY0eB1HVuxoYhdWoCr-jCLDAQ_1EbCEsIz7vmfNwT15gOfDdHPJsdmZcK78BATPI8U-Gm6L8hNZEjC8a15KrMlFzc0wXOy45v1UiXriQsYLMDTlzQ5Ej3ywaGGOA"/>
+</div>
+<h4 class="text-xl font-bold tracking-tight">Sarah Jenkins</h4>
+<p class="text-secondary text-xs uppercase tracking-widest font-bold">Compliance Lead</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Nodes: Interactive Map Simulation -->
+<section class="py-32 bg-surface-container-lowest overflow-hidden">
+<div class="max-w-7xl mx-auto px-12">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold tracking-tight mb-4">GLOBAL NODES</h2>
+<p class="text-on-surface-variant">Strategically positioned to influence every major market.</p>
+</div>
+<div class="relative h-[600px] w-full rounded-2xl overflow-hidden bg-slate-900 border border-white/5">
+<img class="w-full h-full object-cover opacity-30 mix-blend-screen" data-alt="Stylized dark world map with illuminated data lines and glowing nodes at major city locations" data-location="Global" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIS3hd7T32jIOgAi3XaNRPOzCPphhMlBRA_ROfEg3D-q0WNOSHAKeWUbc_0c5Tr9sjkYCDsujtwsEaJJYJDfNv_2uevy7U3f-EXVrlnVGu-fHBirVgImXialjlobd-9W2FaU257opBhccqFlNLOS-gEfbif2DvuY_NFPk3GN6c9C8lZY2TxzJSVISIPoMsJ6QsqPnN-qhkjjwl7Pt2ppbxIz592egx30W9WhJs39cioEmBUKp5X-KVtuT_wmO1Ltn7vY89PavfPKw"/>
+<!-- Node Markers -->
+<div class="absolute top-[30%] left-[20%] group">
+<div class="w-3 h-3 bg-secondary rounded-full animate-pulse shadow-[0_0_15px_#e9c176]"></div>
+<div class="absolute top-full mt-2 left-1/2 -translate-x-1/2 glass-card px-3 py-1 rounded text-[10px] uppercase font-bold opacity-0 group-hover:opacity-100 transition-opacity">New York</div>
+</div>
+<div class="absolute top-[35%] left-[48%] group">
+<div class="w-3 h-3 bg-secondary rounded-full animate-pulse shadow-[0_0_15px_#e9c176]"></div>
+<div class="absolute top-full mt-2 left-1/2 -translate-x-1/2 glass-card px-3 py-1 rounded text-[10px] uppercase font-bold opacity-0 group-hover:opacity-100 transition-opacity">London</div>
+</div>
+<div class="absolute top-[60%] left-[75%] group">
+<div class="w-3 h-3 bg-secondary rounded-full animate-pulse shadow-[0_0_15px_#e9c176]"></div>
+<div class="absolute top-full mt-2 left-1/2 -translate-x-1/2 glass-card px-3 py-1 rounded text-[10px] uppercase font-bold opacity-0 group-hover:opacity-100 transition-opacity">Singapore</div>
+</div>
+<div class="absolute top-[50%] left-[55%] group">
+<div class="w-3 h-3 bg-secondary rounded-full animate-pulse shadow-[0_0_15px_#e9c176]"></div>
+<div class="absolute top-full mt-2 left-1/2 -translate-x-1/2 glass-card px-3 py-1 rounded text-[10px] uppercase font-bold opacity-0 group-hover:opacity-100 transition-opacity">Dubai</div>
+</div>
+<div class="absolute inset-0 pointer-events-none border-[32px] border-background/20"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full border-t border-white/5 pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-semibold text-slate-200">Wenit Solutions</div>
+<p class="text-slate-400 text-xs leading-relaxed uppercase tracking-widest">
+                    Strategic Talent Architecture. <br/> The Digital Consigliere.
+                </p>
+</div>
+<div>
+<h4 class="font-manrope text-xs tracking-widest uppercase text-slate-400 mb-6 font-bold">Solutions</h4>
+<ul class="space-y-3 text-xs text-slate-500 font-medium">
+<li><a class="hover:text-amber-100 transition-colors" href="#">Global Hiring</a></li>
+<li><a class="hover:text-amber-100 transition-colors" href="#">Compliance</a></li>
+<li><a class="hover:text-amber-100 transition-colors" href="#">Payroll Architecture</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-manrope text-xs tracking-widest uppercase text-slate-400 mb-6 font-bold">Company</h4>
+<ul class="space-y-3 text-xs text-slate-500 font-medium">
+<li><a class="text-amber-200" href="#">About Us</a></li>
+<li><a class="hover:text-amber-100 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-amber-100 transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-manrope text-xs tracking-widest uppercase text-slate-400 mb-6 font-bold">Newsletter</h4>
+<div class="flex">
+<input class="bg-surface-container-lowest border-none text-[10px] p-2 focus:ring-1 focus:ring-secondary w-full" placeholder="ENCRYPTED EMAIL" type="email"/>
+<button class="bg-secondary text-on-secondary px-4 py-2">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-16 pt-8 border-t border-white/5 flex flex-col md:row justify-between items-center gap-4">
+<p class="font-manrope text-[10px] tracking-widest uppercase text-slate-500 opacity-80">
+                © 2024 Wenit Solutions. GSTIN: 27AAACW1234F1Z5. Strategic Talent Architecture.
+            </p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-slate-500 hover:text-secondary cursor-pointer text-sm">language</span>
+<span class="material-symbols-outlined text-slate-500 hover:text-secondary cursor-pointer text-sm">share</span>
+</div>
+</div>
+</footer>
+</body></html>

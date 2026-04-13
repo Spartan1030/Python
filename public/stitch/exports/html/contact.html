@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Wenit Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#515f78",
+                    "on-primary-container": "#74829d",
+                    "tertiary-fixed-dim": "#b6c8e4",
+                    "background": "#041329",
+                    "outline": "#8f9097",
+                    "surface-container-highest": "#27354c",
+                    "surface-container": "#112036",
+                    "secondary-fixed": "#ffdea5",
+                    "on-primary": "#233148",
+                    "surface-bright": "#2c3951",
+                    "inverse-on-surface": "#233148",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "surface-container-low": "#0d1c32",
+                    "on-surface": "#d6e3ff",
+                    "on-tertiary": "#203148",
+                    "tertiary-fixed": "#d3e3ff",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#e9c176",
+                    "surface-container-high": "#1c2a41",
+                    "secondary": "#e9c176",
+                    "primary": "#b9c7e4",
+                    "error": "#ffb4ab",
+                    "on-secondary-container": "#dab36a",
+                    "tertiary-container": "#071a2f",
+                    "on-tertiary-fixed": "#091c32",
+                    "on-error": "#690005",
+                    "on-surface-variant": "#c5c6cd",
+                    "on-tertiary-fixed-variant": "#37485f",
+                    "on-primary-fixed-variant": "#39475f",
+                    "inverse-surface": "#d6e3ff",
+                    "surface-tint": "#b9c7e4",
+                    "surface-container-lowest": "#010e24",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "outline-variant": "#44474d",
+                    "secondary-container": "#604403",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-background": "#d6e3ff",
+                    "surface-variant": "#27354c",
+                    "primary-fixed": "#d6e3ff",
+                    "on-secondary-fixed": "#261900",
+                    "primary-container": "#0a192f",
+                    "surface": "#041329",
+                    "error-container": "#93000a",
+                    "on-secondary": "#412d00",
+                    "tertiary": "#b6c8e4",
+                    "on-tertiary-container": "#72839d",
+                    "surface-dim": "#041329"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(39, 53, 76, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .architect-accent {
+            position: relative;
+        }
+        .architect-accent::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 2px;
+            background: #e9c176;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #041329;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #27354c;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-2xl shadow-slate-950/40">
+<div class="flex justify-between items-center px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-blue-100 uppercase">
+                Wenit Solutions
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-manrope tracking-tight font-medium text-sm text-slate-300 hover:text-white transition-colors" href="#">Home</a>
+<a class="font-manrope tracking-tight font-medium text-sm text-slate-300 hover:text-white transition-colors" href="#">About Us</a>
+<a class="font-manrope tracking-tight font-medium text-sm text-slate-300 hover:text-white transition-colors" href="#">Our Services</a>
+<a class="font-manrope tracking-tight font-medium text-sm text-slate-300 hover:text-white transition-colors" href="#">Job Openings</a>
+<a class="font-manrope tracking-tight font-medium text-sm text-blue-200 border-b-2 border-amber-200/50 pb-1" href="#">Contact Us</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-manrope text-sm font-semibold hover:bg-surface-tint transition-all duration-300 scale-95 hover:scale-100">
+                Upload Resume
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Strategic Staffing Consultation Form -->
+<div class="lg:col-span-8 space-y-12">
+<header class="space-y-4">
+<span class="text-secondary tracking-[0.2em] text-xs font-bold uppercase">Consultation</span>
+<h1 class="text-5xl md:text-6xl font-extrabold tracking-tighter text-primary leading-tight">
+                        Strategic Talent <br/><span class="text-on-surface">Architecture.</span>
+</h1>
+<p class="text-on-surface-variant max-w-xl text-lg font-light leading-relaxed">
+                        Design your workforce with the precision of structural engineering. Tell us about your project requirements and we will architect the ideal team.
+                    </p>
+</header>
+<form class="space-y-16">
+<!-- Step 1: Company Foundation -->
+<section class="space-y-8 animate-in slide-in-from-bottom-5 duration-700">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-secondary font-bold">01</span>
+<h2 class="text-xl font-semibold tracking-tight">Company Foundation</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2 group">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant group-focus-within:text-secondary transition-colors">Company Name</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-all py-4 px-0 placeholder:text-outline/40" placeholder="e.g. Nexus Corp" type="text"/>
+</div>
+<div class="space-y-2 group">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant group-focus-within:text-secondary transition-colors">Industry Vertical</label>
+<select class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-all py-4 px-0 text-on-surface-variant">
+<option>Technological Infrastructure</option>
+<option>Financial Systems</option>
+<option>Biotech &amp; Health</option>
+<option>Creative Design</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Step 2: Talent Specification -->
+<section class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-secondary font-bold">02</span>
+<h2 class="text-xl font-semibold tracking-tight">Talent Specification</h2>
+</div>
+<div class="space-y-6">
+<div class="space-y-2 group">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant group-focus-within:text-secondary transition-colors">Key Role Requirement</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-all py-4 px-0 placeholder:text-outline/40" placeholder="e.g. Senior Backend Architect" type="text"/>
+</div>
+<div class="space-y-2 group">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant group-focus-within:text-secondary transition-colors">Role Description &amp; Critical Skills</label>
+<textarea class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-all py-4 px-0 placeholder:text-outline/40 resize-none" placeholder="Detail the core competencies and architectural challenges..." rows="4"></textarea>
+</div>
+</div>
+</section>
+<!-- Step 3: Engagement Model -->
+<section class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-secondary font-bold">03</span>
+<h2 class="text-xl font-semibold tracking-tight">Engagement Model</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<label class="cursor-pointer group">
+<input class="hidden peer" name="engagement" type="radio"/>
+<div class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-lg group-hover:bg-surface-container transition-all peer-checked:border-secondary peer-checked:bg-surface-container-high relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-secondary mb-3">person_add</span>
+<h3 class="font-bold text-sm">Permanent</h3>
+<p class="text-xs text-on-surface-variant mt-2">Long-term strategic growth hires.</p>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" name="engagement" type="radio"/>
+<div class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-lg group-hover:bg-surface-container transition-all peer-checked:border-secondary peer-checked:bg-surface-container-high relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-secondary mb-3">contract</span>
+<h3 class="font-bold text-sm">Contract</h3>
+<p class="text-xs text-on-surface-variant mt-2">Agile specialized project scaling.</p>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" name="engagement" type="radio"/>
+<div class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-lg group-hover:bg-surface-container transition-all peer-checked:border-secondary peer-checked:bg-surface-container-high relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-secondary mb-3">payments</span>
+<h3 class="font-bold text-sm">Payroll</h3>
+<p class="text-xs text-on-surface-variant mt-2">Comprehensive backend management.</p>
+</div>
+</label>
+</div>
+</section>
+<div class="pt-8">
+<button class="w-full md:w-auto bg-primary text-on-primary px-12 py-4 rounded-md font-bold tracking-tight hover:shadow-[0_0_20px_rgba(185,199,228,0.3)] transition-all transform hover:-translate-y-1" type="submit">
+                            Initialize Consultation
+                        </button>
+</div>
+</form>
+</div>
+<!-- Right Column: Contact Sidebar & Map -->
+<div class="lg:col-span-4 space-y-8">
+<!-- Contact Card -->
+<div class="glass-panel p-8 rounded-xl architect-accent shadow-2xl border border-white/5 space-y-8">
+<h3 class="text-2xl font-bold tracking-tight text-primary">Direct Nexus</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">alternate_email</span>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant">Email</p>
+<p class="text-lg font-medium">solutions@wenit.in</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">phone_iphone</span>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant">Phone</p>
+<p class="text-lg font-medium">+91 (80) 4567 8900</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant">Bengaluru Hub</p>
+<p class="text-sm font-light leading-relaxed text-on-surface-variant">
+                                    Suite 405, Prestige Sky, <br/>Whitefield, Bengaluru - 560066
+                                </p>
+</div>
+</div>
+</div>
+<!-- Trust Signals -->
+<div class="pt-8 border-t border-white/10 grid grid-cols-2 gap-4">
+<div class="p-3 bg-surface-container-lowest rounded flex flex-col items-center justify-center text-center">
+<span class="text-[10px] uppercase tracking-tighter text-outline mb-1">GSTIN</span>
+<span class="text-[10px] font-bold text-on-surface">27AAACW1234F</span>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded flex flex-col items-center justify-center text-center">
+<span class="text-[10px] uppercase tracking-tighter text-outline mb-1">ISO Certified</span>
+<span class="text-[10px] font-bold text-on-surface">9001:2015</span>
+</div>
+</div>
+</div>
+<!-- Architectural Map Representation -->
+<div class="relative group h-80 rounded-xl overflow-hidden border border-white/5">
+<img class="w-full h-full object-cover filter grayscale brightness-50 contrast-125 group-hover:scale-105 transition-transform duration-700" data-alt="Modern dark stylized 3D architectural city map of Bangalore showing glowing blue nodes and grid lines" data-location="Bengaluru" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpLubokagjS5_B9GZ3t743YhttcKqEwhg7cNDnl3aFkEtwDXCXluARLDGJUbxx9tNO2yhmnC9WCOQhNTiNiYrH0lOi89hzJsFC9ro4_si3pweNMMX7zydWu5wUZ5xxmqDJepvbaE7ucziuWCtqByXJKuGWe0EodhTfCaSW91Zjczmxq9zMWvKeOPMhrQE9cZKistfwOrcEpCXpdsgfT9HhTVwXSLDlLJhjATPaeGaayBdTxwTYx0Kkls7TYnHLZj5elfbnGSZ3vw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">Primary HQ</span>
+</div>
+<p class="text-xl font-bold tracking-tight">Bengaluru Hub</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 pt-16 pb-8 bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-semibold text-slate-200">Wenit Solutions</div>
+<p class="font-manrope text-xs tracking-widest uppercase text-slate-400">Strategic Talent Architecture.</p>
+<div class="flex space-x-4 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-amber-200 cursor-pointer">public</span>
+<span class="material-symbols-outlined text-amber-200 cursor-pointer">share</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-slate-200 font-bold text-sm uppercase tracking-wider">Company</h4>
+<ul class="space-y-2">
+<li><a class="font-manrope text-xs tracking-widest uppercase text-slate-500 hover:text-amber-100 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-manrope text-xs tracking-widest uppercase text-slate-500 hover:text-amber-100 transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-manrope text-xs tracking-widest uppercase text-slate-500 hover:text-amber-100 transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-slate-200 font-bold text-sm uppercase tracking-wider">Services</h4>
+<ul class="space-y-2">
+<li><a class="font-manrope text-xs tracking-widest uppercase text-slate-500 hover:text-amber-100 transition-colors" href="#">Global Hiring</a></li>
+<li><a class="font-manrope text-xs tracking-widest uppercase text-slate-500 hover:text-amber-100 transition-colors" href="#">Compliance</a></li>
+<li><a class="font-manrope text-xs tracking-widest uppercase text-amber-200" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-slate-200 font-bold text-sm uppercase tracking-wider">Newsletter</h4>
+<div class="flex bg-surface-container-low p-1 rounded-md">
+<input class="bg-transparent border-0 text-xs w-full focus:ring-0" placeholder="Architecture Insights" type="email"/>
+<button class="bg-secondary p-2 rounded text-on-secondary">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-16 px-12 max-w-7xl mx-auto border-t border-white/5 pt-8 text-center md:text-left">
+<p class="font-manrope text-[10px] tracking-widest uppercase text-slate-500">
+                © 2024 Wenit Solutions. GSTIN: 27AAACW1234F1Z5. Strategic Talent Architecture.
+            </p>
+</div>
+</footer>
+</body></html>

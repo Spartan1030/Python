@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#515f78",
+                        "on-primary-container": "#74829d",
+                        "tertiary-fixed-dim": "#b6c8e4",
+                        "background": "#041329",
+                        "outline": "#8f9097",
+                        "surface-container-highest": "#27354c",
+                        "surface-container": "#112036",
+                        "secondary-fixed": "#ffdea5",
+                        "on-primary": "#233148",
+                        "surface-bright": "#2c3951",
+                        "inverse-on-surface": "#233148",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "surface-container-low": "#0d1c32",
+                        "on-surface": "#d6e3ff",
+                        "on-tertiary": "#203148",
+                        "tertiary-fixed": "#d3e3ff",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-container-high": "#1c2a41",
+                        "secondary": "#e9c176",
+                        "primary": "#b9c7e4",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#dab36a",
+                        "tertiary-container": "#071a2f",
+                        "on-tertiary-fixed": "#091c32",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#c5c6cd",
+                        "on-tertiary-fixed-variant": "#37485f",
+                        "on-primary-fixed-variant": "#39475f",
+                        "inverse-surface": "#d6e3ff",
+                        "surface-tint": "#b9c7e4",
+                        "surface-container-lowest": "#010e24",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "outline-variant": "#44474d",
+                        "secondary-container": "#604403",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-background": "#d6e3ff",
+                        "surface-variant": "#27354c",
+                        "primary-fixed": "#d6e3ff",
+                        "on-secondary-fixed": "#261900",
+                        "primary-container": "#0a192f",
+                        "surface": "#041329",
+                        "error-container": "#93000a",
+                        "on-secondary": "#412d00",
+                        "tertiary": "#b6c8e4",
+                        "on-tertiary-container": "#72839d",
+                        "surface-dim": "#041329"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(39, 53, 76, 0.6);
+            backdrop-filter: blur(24px);
+            border-top: 1px solid rgba(185, 199, 228, 0.1);
+        }
+        .architect-card {
+            position: relative;
+        }
+        .architect-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 2px;
+            background-color: #e9c176;
+        }
+        .silk-gradient {
+            background: linear-gradient(135deg, #b9c7e4 0%, #0a192f 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-2xl shadow-slate-950/40">
+<div class="flex justify-between items-center px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-blue-100 uppercase">WENIT SOLUTIONS</div>
+<div class="hidden md:flex items-center space-x-8 font-manrope tracking-tight font-medium text-sm">
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/5 px-3 py-2 rounded" href="#">Home</a>
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/5 px-3 py-2 rounded" href="#">About Us</a>
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/5 px-3 py-2 rounded" href="#">Our Services</a>
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/5 px-3 py-2 rounded" href="#">Job Openings</a>
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/5 px-3 py-2 rounded" href="#">Contact Us</a>
+</div>
+<button class="bg-primary text-on-primary font-medium px-6 py-2 rounded-md active:scale-95 transition-all duration-200 shadow-lg shadow-primary/10 text-blue-200 border-b-2 border-amber-200/50 pb-1">
+                Upload Resume
+            </button>
+</div>
+</nav>
+<main class="min-h-screen pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center">
+<!-- Hero Section -->
+<header class="text-center mb-16 max-w-3xl">
+<span class="text-secondary font-label tracking-[0.2em] uppercase text-xs mb-4 block">Strategic Talent Architecture</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Accelerate Your <br/> Career Pivot.
+            </h1>
+<p class="text-on-surface-variant text-lg md:text-xl font-light">
+                Our AI-driven parsing engine extracts your expertise instantly. No more redundant manual entry—just precise alignment with high-stakes opportunities.
+            </p>
+</header>
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Side: Upload Zone -->
+<div class="lg:col-span-7 space-y-8">
+<div class="glass-panel architect-card p-12 rounded-xl flex flex-col items-center justify-center border-dashed border-2 border-outline-variant/30 group hover:border-secondary/40 transition-all duration-500 min-h-[400px]">
+<div class="bg-surface-container-highest w-20 h-20 rounded-full flex items-center justify-center mb-8 shadow-xl">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">cloud_upload</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-white mb-2">Drop your resume here</h3>
+<p class="text-on-surface-variant mb-8 font-light">PDF, DOCX, or RTF (Max 10MB)</p>
+<button class="silk-gradient text-on-primary font-semibold px-10 py-4 rounded-md shadow-2xl hover:shadow-primary/20 active:scale-95 transition-all duration-300">
+                        Choose File
+                    </button>
+<div class="mt-12 flex items-center gap-4 text-xs font-label tracking-widest text-on-surface-variant uppercase bg-surface-container-lowest/50 px-4 py-2 rounded-full border border-white/5">
+<span class="material-symbols-outlined text-sm text-secondary">bolt</span>
+                        AI-DRIVEN RESUME PARSING ENABLED
+                    </div>
+</div>
+<!-- Active Parsing State (Hidden/Simulation) -->
+<div class="bg-surface-container-low p-8 rounded-xl space-y-6">
+<div class="flex justify-between items-end mb-2">
+<div class="space-y-1">
+<p class="text-sm font-label text-secondary tracking-wider uppercase">Parsing Status</p>
+<h4 class="text-white font-medium">Extracting professional history...</h4>
+</div>
+<span class="text-secondary font-bold text-xl">68%</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-2/3 transition-all duration-1000 ease-out"></div>
+</div>
+<div class="flex gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span class="text-xs text-on-surface-variant">File Integrity Verified</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span class="text-xs text-on-surface-variant">Skills Mapping Initiated</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Contact & Trust -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Basic Info Form -->
+<div class="bg-surface-container p-10 rounded-xl space-y-8">
+<h3 class="text-xl font-headline font-bold text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">person_edit</span>
+                        Verify Contact Details
+                    </h3>
+<div class="space-y-6">
+<div class="relative">
+<label class="block text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-2">Primary Email</label>
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-transparent focus:border-secondary transition-all px-4 py-3 text-on-surface outline-none rounded-t-lg" placeholder="alex.architect@talent.com" type="email"/>
+</div>
+<div class="relative">
+<label class="block text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-2">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-transparent focus:border-secondary transition-all px-4 py-3 text-on-surface outline-none rounded-t-lg" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div class="relative">
+<label class="block text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-2">LinkedIn URL</label>
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-transparent focus:border-secondary transition-all px-4 py-3 text-on-surface outline-none rounded-t-lg" placeholder="linkedin.com/in/alex-architect" type="url"/>
+</div>
+</div>
+<button class="w-full bg-surface-bright text-on-surface font-semibold py-4 rounded-md border border-white/5 hover:bg-surface-container-highest active:scale-[0.98] transition-all duration-200">
+                        Confirm &amp; Process
+                    </button>
+</div>
+<!-- Trust Indicators -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 rounded-xl border border-white/5">
+<span class="material-symbols-outlined text-secondary mb-3">verified_user</span>
+<h4 class="text-xs font-bold text-white uppercase tracking-tighter">GDPR Compliant</h4>
+<p class="text-[10px] text-on-surface-variant mt-1 leading-relaxed">Your data is encrypted and stored in EEA-compliant servers.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-white/5">
+<span class="material-symbols-outlined text-secondary mb-3">lock</span>
+<h4 class="text-xs font-bold text-white uppercase tracking-tighter">256-bit Encryption</h4>
+<p class="text-[10px] text-on-surface-variant mt-1 leading-relaxed">Secure end-to-end transmission for all candidate dossiers.</p>
+</div>
+</div>
+<!-- Architectural Illustration -->
+<div class="rounded-xl overflow-hidden aspect-video relative group">
+<img alt="Premium office interior" class="w-full h-full object-cover opacity-40 grayscale group-hover:scale-105 transition-transform duration-700" data-alt="Monochrome wide shot of a high-end architectural workspace with glass walls and minimalist furniture in deep blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkxcnaYKBv2rM9jFcxP_IRuBZKhOoAVM6YOfYjD9_GEWafCyvKHHkaJblnrRe6gB82djGb9fDp9MLKLds9Lq1iEeuKVL1CvATHYk2lGgKebs5ew7Y3sc-7c0WES7_sJvW59IhjvwoxL1QRF8ap1Chx4hG0Azyym-CEbeYkZ3vW4ZASuvywQT3yJ3HA4n_3-VJHveWnqWlf6OSmRqNdX8YM-_3ops4kJx2MNw5Lsi2kSWqqpUHq9qIvoQRJL57ZQR3yZHHR4805FUw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-[10px] font-label tracking-widest text-secondary uppercase">Precision Hiring Engine</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 pt-16 pb-8 bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="text-lg font-semibold text-slate-200 mb-6 uppercase tracking-tighter">Wenit Solutions</div>
+<p class="text-slate-500 font-manrope text-xs tracking-widest leading-relaxed max-w-sm mb-8">
+                    Defining the future of human capital through strategic architectural precision. Specialized in executive placement and high-performance team building.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-amber-200 transition-colors">share</span>
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-amber-200 transition-colors">hub</span>
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-amber-200 transition-colors">groups</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-amber-200 font-bold text-[10px] tracking-[0.2em] uppercase">Architecture</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-slate-500 font-manrope text-xs tracking-widest uppercase hover:text-amber-100 transition-colors duration-300" href="#">Global Hiring</a>
+<a class="text-slate-500 font-manrope text-xs tracking-widest uppercase hover:text-amber-100 transition-colors duration-300" href="#">Compliance</a>
+<a class="text-slate-500 font-manrope text-xs tracking-widest uppercase hover:text-amber-100 transition-colors duration-300" href="#">Strategic Alignment</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="text-amber-200 font-bold text-[10px] tracking-[0.2em] uppercase">Legal</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-slate-500 font-manrope text-xs tracking-widest uppercase hover:text-amber-100 transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-slate-500 font-manrope text-xs tracking-widest uppercase hover:text-amber-100 transition-colors duration-300" href="#">Terms of Service</a>
+<a class="text-slate-500 font-manrope text-xs tracking-widest uppercase hover:text-amber-100 transition-colors duration-300" href="#">Cookie Policy</a>
+</nav>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-16 pt-8 border-t border-white/5">
+<p class="text-slate-600 font-manrope text-[10px] tracking-widest text-center uppercase">
+                © 2024 Wenit Solutions. GSTIN: 27AAACW1234F1Z5. Strategic Talent Architecture.
+            </p>
+</div>
+</footer>
+</body></html>

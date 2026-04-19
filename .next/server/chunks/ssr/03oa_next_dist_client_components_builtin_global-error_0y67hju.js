@@ -1,0 +1,3 @@
+module.exports=[23995,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(54408);a.n(d("[project]/OneDrive/Desktop/me/New folder (2)/wenit-solutions/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},3423,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(54408);a.n(d("[project]/OneDrive/Desktop/me/New folder (2)/wenit-solutions/node_modules/next/dist/client/components/builtin/global-error.js"))},98544,a=>{"use strict";a.i(23995);var b=a.i(3423);a.n(b)},26513,a=>{a.n(a.i(98544))}];
+
+//# sourceMappingURL=03oa_next_dist_client_components_builtin_global-error_0y67hju.js.map

@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\n  \"app\": {\n    \"[project]/OneDrive/Desktop/me/New folder (2)/wenit-solutions/src/app/about/page\": [\n      \"static/media/a343f882a40d2cc9-s.p.0kho-wj7-y-w1.woff2\"\n    ]\n  },\n  \"appUsingSizeAdjust\": true,\n  \"pages\": {},\n  \"pagesUsingSizeAdjust\": false\n}"

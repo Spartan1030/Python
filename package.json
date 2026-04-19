@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "cpanel-start": "NODE_ENV=production node .next/standalone/server.js",
     "lint": "eslint"
   },
   "dependencies": {
